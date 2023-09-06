@@ -6,7 +6,7 @@ public class CameraFollowObject : MonoBehaviour
 {
 
     public Transform target;
-    public float smoothSpeed = 0.125f; // Smoothing factor for camera movement
+    public float smoothSpeed = 1f; // Smoothing factor for camera movement
     public Vector3 offset; // Offset from the target's position
 
     // Start is called before the first frame update

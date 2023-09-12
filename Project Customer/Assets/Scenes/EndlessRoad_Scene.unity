@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &377486380 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6590432335674300791, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
-  m_PrefabInstance: {fileID: 1337687406}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &709057395
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,7 +305,8 @@ MonoBehaviour:
   - {fileID: 4445357847944695026, guid: 428f0e9e0e3a608468175701c5aa6b5d, type: 3}
   zSpawnPos: 3
   tileLenght: 40
-  playerTransform: {fileID: 377486380}
+  numberOfTiles: 4
+  playerTransform: {fileID: 1337687407}
 --- !u!4 &815374067
 Transform:
   m_ObjectHideFlags: 0
@@ -326,6 +322,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &845551666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3069976858466403903, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310272885
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,8 +378,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 377486380}
-  m_Follow: {fileID: 377486380}
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 1337687407}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
@@ -450,11 +451,73 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7509505104813699563, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 404735307320981758, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+    - {fileID: 4427122069645614797, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6832725082266742843, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1518186136}
   m_SourcePrefab: {fileID: 100100000, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+--- !u!4 &1337687407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8316542092218085052, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1379052560 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1324755088276642713, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518186134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6832725082266742843, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518186136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518186134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f3d69022b837e14c8e1def97d2e9b96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 1741780712}
+  forwardAcc: 6.02
+  maxSpeed: 50
+  turnStrength: 180
+  gravityForce: 50
+  dragOnGround: 3
+  speedInput: 3000
+  grounded: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundRayLength: 0.8
+  groundRayPoint: {fileID: 1379052560}
+  leftFrontWheel: {fileID: 845551666}
+  rightFrontWheel: {fileID: 1545320504}
+  maxWheelTurn: 40
+--- !u!4 &1545320504 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6632508646156248286, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1741780712 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6999686756562764116, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1997440955
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,8 +661,8 @@ MonoBehaviour:
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 5, z: -7.5}
   m_XDamping: 0
-  m_YDamping: 0.25
-  m_ZDamping: 1
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 20
@@ -622,7 +685,7 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 0
-  m_VerticalDamping: 5
+  m_VerticalDamping: 0
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0

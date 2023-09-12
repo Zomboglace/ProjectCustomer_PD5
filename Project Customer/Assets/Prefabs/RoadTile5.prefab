@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7875817176497688857}
   - component: {fileID: 4757089626372773373}
   - component: {fileID: 2976623589141435147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 3854981981315981371}
   - component: {fileID: 3882119456289050985}
   - component: {fileID: 8621941293803941915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4139852621151063391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadTile5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 1645353887698698327}
   - component: {fileID: 7518755074794155941}
   - component: {fileID: 4028529314264538307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 2870897590473483535}
   - component: {fileID: 5367156419992766296}
   - component: {fileID: 5168452711685396414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   - component: {fileID: 1147474074651028086}
   - component: {fileID: 7834959379867301446}
   - component: {fileID: 13553264227460149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 6802308652849303947}
   - component: {fileID: 4613443591639414687}
   - component: {fileID: 957225076865621321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 1875787253250756156}
   - component: {fileID: 1969133997826302021}
   - component: {fileID: 8994623643256452420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

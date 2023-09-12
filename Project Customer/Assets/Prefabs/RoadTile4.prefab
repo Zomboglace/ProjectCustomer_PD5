@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3625392608206042926}
   - component: {fileID: 5073294615902155568}
   - component: {fileID: 1218072872615835687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 3368993658672080416}
   - component: {fileID: 5788546326152438791}
   - component: {fileID: 6259218305632295295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 6795954466207025750}
   - component: {fileID: 831814066932076826}
   - component: {fileID: 4936651555362987475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 5311637753125242611}
   - component: {fileID: 219363290619785674}
   - component: {fileID: 6538886843752672586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 5228424428843824397}
   - component: {fileID: 5299727163440785388}
   - component: {fileID: 1665679581824138418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 8905953603895733827}
   - component: {fileID: 4595469820388147172}
   - component: {fileID: 1553226562925214992}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7067388656528037372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadTile4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 8901228659890770517}
   - component: {fileID: 2336965583372289781}
   - component: {fileID: 4492983192070911884}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5741743933452881871}
   - component: {fileID: 2098343407190991927}
   - component: {fileID: 2584179331988775466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 7957555569432641687}
   - component: {fileID: 4439049346294100375}
   - component: {fileID: 1975101789955481887}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 3890877949216906406}
   - component: {fileID: 4279380008000459924}
   - component: {fileID: 9192478139502018833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   - component: {fileID: 6969863969607351399}
   - component: {fileID: 3559148181080625728}
   - component: {fileID: 8299356404744038635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 5887243528572752640}
   - component: {fileID: 6326222491705931893}
   - component: {fileID: 7515955753121322037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8655828342377208599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RoadTile3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

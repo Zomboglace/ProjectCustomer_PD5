@@ -40,6 +40,7 @@ public class CarControlSphere : MonoBehaviour
         }
         transform.position = spehere.position;
 
+        //make automatic acceleration
         turnInput = Input.GetAxis("Horizontal");
 
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime * Input.GetAxis("Vertical"), 0f));

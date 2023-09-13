@@ -6,6 +6,7 @@ public class CarControlSphere : MonoBehaviour
     public Rigidbody spehere;
 
     public float forwardAcc = 3f, backAcc = 2f, maxSpeed = 50f, turnStrength = 180f, gravityForce= 10f, dragOnGround = 3f, initialAcc = 2f;
+    public float maxRotation = 90f;
 
     private float speedInput, turnInput;
 

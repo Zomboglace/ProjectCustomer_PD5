@@ -5,7 +5,7 @@ public class CarControlSphere : MonoBehaviour
 
     public Rigidbody spehere;
 
-    public float forwardAcc = 3f, backAcc = 2f, maxSpeed = 50f, turnStrength = 180f, gravityForce= 10f, dragOnGround = 3f;
+    public float forwardAcc = 3f, backAcc = 2f, maxSpeed = 50f, turnStrength = 180f, gravityForce= 10f, dragOnGround = 3f, initialAcc = 2f;
 
     private float speedInput, turnInput;
 
@@ -23,6 +23,7 @@ public class CarControlSphere : MonoBehaviour
     void Start()
     {
         spehere.transform.parent = null;
+        //forwardAcc = initialAcc; //to start slow
     }
 
     // Update is called once per frame
@@ -30,6 +31,7 @@ public class CarControlSphere : MonoBehaviour
     {
         speedInput = 0;
 
+        /*
         if (Input.GetAxis("Vertical") > 0) {
             speedInput = Input.GetAxis("Vertical") * forwardAcc * 1000f;
         }
@@ -38,15 +40,24 @@ public class CarControlSphere : MonoBehaviour
         {
             speedInput = Input.GetAxis("Vertical") * backAcc * 1000f;
         }
+        */
+
+        speedInput = forwardAcc * 1000f; //change acc in time to SPEED UP
+
         transform.position = spehere.position;
 
-        //make automatic acceleration
         turnInput = Input.GetAxis("Horizontal");
 
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
+        //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime, 0f));
 
-        leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * maxWheelTurn) - 180, leftFrontWheel.localRotation.eulerAngles.z);
-        rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, (turnInput * maxWheelTurn), rightFrontWheel.localRotation.eulerAngles.z);
+        leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x,
+                                                       (turnInput * maxWheelTurn) - 180,
+                                                        leftFrontWheel.localRotation.eulerAngles.z);
+
+        rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x,
+                                                        (turnInput * maxWheelTurn),
+                                                        rightFrontWheel.localRotation.eulerAngles.z);
 
     }
 

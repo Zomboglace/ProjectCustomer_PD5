@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -143,10 +143,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.047107197
       objectReference: {fileID: 0}
-    - target: {fileID: 4427122069645614797, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6832725082266742843, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
       propertyPath: m_Name
       value: red_car sphere
@@ -201,7 +197,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6832725082266742843, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1690842447}
+      addedObject: {fileID: 1690842451}
   m_SourcePrefab: {fileID: 100100000, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
 --- !u!1 &551894931
 GameObject:
@@ -316,7 +312,6 @@ GameObject:
   - component: {fileID: 709057400}
   - component: {fileID: 709057399}
   - component: {fileID: 709057398}
-  - component: {fileID: 709057397}
   - component: {fileID: 709057396}
   - component: {fileID: 709057401}
   m_Layer: 0
@@ -360,21 +355,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &709057397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709057395}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1606dab2205e7ae8cbe33c82f9c4245f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothSpeed: 1
-  offset: {x: 0, y: 10, z: -10}
 --- !u!81 &709057398
 AudioListener:
   m_ObjectHideFlags: 0
@@ -442,8 +422,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709057395}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2897841, y: 0, z: 0, w: 0.95709205}
-  m_LocalPosition: {x: 1.6, y: 10.32, z: -2.4699998}
+  m_LocalRotation: {x: 0.18569006, y: 0.025218135, z: -0.0047672656, w: 0.98227316}
+  m_LocalPosition: {x: 1.3362689, y: 7.3597975, z: -0.102918625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -616,7 +596,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 1690842446}
-  m_Follow: {fileID: 1690842446}
+  m_Follow: {fileID: 1599143699}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
@@ -704,6 +684,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1599143697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1599143699}
+  - component: {fileID: 1599143698}
+  m_Layer: 0
+  m_Name: FollowPlayerObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1599143698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599143697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054a016c4fce5339d9e122e5a99decae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToFollow: {fileID: 1690842442}
+  smoothSpeed: 0.125
+--- !u!4 &1599143699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599143697}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3362689, y: 5.3597975, z: 7.3970814}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1653706179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1324755088276642713, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
@@ -719,7 +745,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8316542092218085052, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
   m_PrefabInstance: {fileID: 398269984}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1690842447
+--- !u!114 &1690842451
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -728,7 +754,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1690842442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a28cb9371db3ba49a8ddd98db208060, type: 3}
+  m_Script: {fileID: 11500000, guid: 16274ede1e1dbfc60995a19c8171de62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sphere: {fileID: 833711691}
@@ -1046,13 +1072,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 5, z: -7.5}
+  m_FollowOffset: {x: 0, y: 2, z: -7.5}
   m_XDamping: 0
   m_YDamping: 0
   m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
-  m_YawDamping: 20
+  m_YawDamping: 0
   m_RollDamping: 0
   m_AngularDamping: 0
 --- !u!114 &2132537631
@@ -1074,7 +1100,7 @@ MonoBehaviour:
   m_HorizontalDamping: 0
   m_VerticalDamping: 0
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.5035801
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_SoftZoneWidth: 0.8
@@ -1104,3 +1130,4 @@ SceneRoots:
   - {fileID: 398269984}
   - {fileID: 551894935}
   - {fileID: 1463805285}
+  - {fileID: 1599143699}

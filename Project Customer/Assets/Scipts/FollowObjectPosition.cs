@@ -14,7 +14,7 @@ public class FollowObjectPosition : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Only follow the z position of the object
         Vector3 desiredPosition = new Vector3(transform.position.x, transform.position.y, objectToFollow.transform.position.z);

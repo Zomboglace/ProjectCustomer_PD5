@@ -6,6 +6,9 @@ public class CarControlSphere : MonoBehaviour
     public Rigidbody spehere;
 
     public float forwardAcc = 3f, backAcc = 2f, maxSpeed = 50f, turnStrength = 180f, gravityForce= 10f, dragOnGround = 3f, initialAcc = 2f;
+    private float carFuel = 100;
+    public float maxCarFuel = 105;
+
     public float maxRotation = 90f;
 
     private float speedInput, turnInput;
@@ -25,6 +28,10 @@ public class CarControlSphere : MonoBehaviour
     {
         spehere.transform.parent = null;
         //forwardAcc = initialAcc; //to start slow
+
+        //fuel
+        carFuel = maxCarFuel;
+        InvokeRepeating("lessFuel", 3.0f, 0.8f);
     }
 
     // Update is called once per frame
@@ -88,5 +95,10 @@ public class CarControlSphere : MonoBehaviour
         }
 
         
+    }
+
+    void lessFuel()
+    {
+        carFuel -= 0.5
     }
 }

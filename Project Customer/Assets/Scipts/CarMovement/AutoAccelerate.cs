@@ -21,18 +21,27 @@ public class AutoAccelerate : MonoBehaviour
     public Transform leftFrontWheel, rightFrontWheel;       //wheel turn behaviour variables
     public float maxWheelTurn = 25f;                        //
 
+    private Vector3 spherePos;
+    public Vector3 sphereOffset;
+
     // Start is called before the first frame update
     void Start()
     {
         sphere.transform.parent = null;        //don't know what this does
+        sphereOffset = new Vector3(0f, 0f, 1.3f);
     }
 
     // Update is called once per frame
     void Update()
     {
         speedInput += forwardAcc * Time.deltaTime * 10; //increase speed gradually
-        
-        transform.position = sphere.position;      //move car to the position of the sphere
+
+       // Debug.Log(sphere.position);
+
+        spherePos = sphere.transform.position;
+
+        transform.position = spherePos -sphereOffset ;      //move car to the position of the sphere
+
 
         turnInput = Input.GetAxis("Horizontal");      //read steering input
 

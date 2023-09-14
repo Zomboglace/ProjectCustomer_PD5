@@ -131,6 +131,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2588916880134418168, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.067296
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588916880134418168, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0386952
+      objectReference: {fileID: 0}
+    - target: {fileID: 2588916880134418168, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.047107197
+      objectReference: {fileID: 0}
     - target: {fileID: 4427122069645614797, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -141,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7509505104813699563, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8316542092218085052, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
       propertyPath: m_LocalPosition.x
@@ -186,7 +198,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6832725082266742843, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1690842447}
   m_SourcePrefab: {fileID: 100100000, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
 --- !u!1 &551894931
 GameObject:
@@ -518,7 +533,7 @@ MonoBehaviour:
   zSpawnPos: 3
   tileLenght: 40
   numberOfTiles: 5
-  playerTransform: {fileID: 1492342789}
+  playerTransform: {fileID: 1690842446}
 --- !u!4 &815374067
 Transform:
   m_ObjectHideFlags: 0
@@ -534,10 +549,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &845551666 stripped
+--- !u!4 &831532801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6632508646156248286, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 398269984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &833711691 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6999686756562764116, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 398269984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &869533289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3069976858466403903, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
-  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabInstance: {fileID: 398269984}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310272885
 GameObject:
@@ -590,8 +615,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1337687407}
+  m_LookAt: {fileID: 1690842446}
+  m_Follow: {fileID: 1690842446}
   m_Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
@@ -679,11 +704,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1492342789 stripped
+--- !u!4 &1653706179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1324755088276642713, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 398269984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1690842442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6832725082266742843, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
+  m_PrefabInstance: {fileID: 398269984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1690842446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8316542092218085052, guid: 97dc64a7f1a531d4ea68ddb77d855839, type: 3}
-  m_PrefabInstance: {fileID: 1337687406}
+  m_PrefabInstance: {fileID: 398269984}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690842447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690842442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a28cb9371db3ba49a8ddd98db208060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 833711691}
+  forwardAcc: 5
+  maxSpeed: 50
+  turnStrength: 180
+  gravityForce: 10
+  dragOnGround: 3
+  speedInput: 3000
+  grounded: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundRayLength: 0.5
+  groundRayPoint: {fileID: 1653706179}
+  leftFrontWheel: {fileID: 869533289}
+  rightFrontWheel: {fileID: 831532801}
+  maxWheelTurn: 25
 --- !u!1 &1727147121
 GameObject:
   m_ObjectHideFlags: 0

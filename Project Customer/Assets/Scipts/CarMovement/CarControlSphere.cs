@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CarControlSphere : MonoBehaviour
 {
@@ -6,8 +7,14 @@ public class CarControlSphere : MonoBehaviour
     public Rigidbody spehere;
 
     public float forwardAcc = 3f, backAcc = 2f, maxSpeed = 50f, turnStrength = 180f, gravityForce= 10f, dragOnGround = 3f, initialAcc = 2f;
-    private float carFuel = 100;
-    public float maxCarFuel = 105;
+    
+    //fuel variables
+    /*
+    private float carFuel = 105;
+    public float maxCarFuel = 105, fuelSubstractTime = 1.0;
+    private string carFuelString;
+    public Text carFuelText;
+    */
 
     public float maxRotation = 90f;
 
@@ -30,8 +37,11 @@ public class CarControlSphere : MonoBehaviour
         //forwardAcc = initialAcc; //to start slow
 
         //fuel
+        /*
         carFuel = maxCarFuel;
-        InvokeRepeating("lessFuel", 3.0f, 0.8f);
+        InvokeRepeating("lessFuel", 3.0f, fuelSubstractTime);
+        carFuelString = carFuel.ToString();
+        */
     }
 
     // Update is called once per frame
@@ -97,8 +107,13 @@ public class CarControlSphere : MonoBehaviour
         
     }
 
+
+    /*
     void lessFuel()
     {
-        carFuel -= 0.5
+        carFuel -= 0.5;
+        carFuelString = carFuel.ToString();
+
     }
+    */
 }

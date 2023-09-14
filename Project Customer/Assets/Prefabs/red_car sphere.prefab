@@ -1454,8 +1454,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8316542092218085052}
-  - component: {fileID: 404735307320981758}
-  - component: {fileID: 4427122069645614797}
   - component: {fileID: 7509505104813699563}
   m_Layer: 0
   m_Name: red_car sphere
@@ -1483,39 +1481,6 @@ Transform:
   - {fileID: 1324755088276642713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &404735307320981758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6832725082266742843}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 129843b24bc2a6b07baa42878fb7a8e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceleration: 10.1
-  maxSpeed: 20
-  drag: 0.5
-  rollingResistance: 0.01
-  rotationSpeed: 100
---- !u!114 &4427122069645614797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6832725082266742843}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc31ab7a97addc4e95be6812aec80f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 1000
-  torque: 1500
-  playerRigidbody: {fileID: 0}
-  direction: 0
 --- !u!114 &7509505104813699563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1535,6 +1500,8 @@ MonoBehaviour:
   turnStrength: 180
   gravityForce: 50
   dragOnGround: 3
+  initialAcc: 2
+  maxRotation: 90
   grounded: 0
   whatIsGround:
     serializedVersion: 2

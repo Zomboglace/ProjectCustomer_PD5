@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 8621941293803941915}
   m_Layer: 6
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -682,7 +682,7 @@ GameObject:
   - component: {fileID: 8994623643256452420}
   m_Layer: 6
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

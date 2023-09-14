@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 124824621459702517}
   - component: {fileID: 6999686756562764116}
   - component: {fileID: 4410654793075467731}
+  - component: {fileID: 4192749354249396670}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -133,6 +134,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4192749354249396670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472245242275421283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce31cf4169e8c0242a0e3d5028ef2301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carMovement: {fileID: 1291577258244145727}
 --- !u!1 &1075562846313034706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1469,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8316542092218085052}
   - component: {fileID: 7509505104813699563}
+  - component: {fileID: 1291577258244145727}
+  - component: {fileID: 4628273029693409009}
   m_Layer: 0
   m_Name: red_car sphere
   m_TagString: Untagged
@@ -1511,6 +1527,47 @@ MonoBehaviour:
   leftFrontWheel: {fileID: 3069976858466403903}
   rightFrontWheel: {fileID: 6632508646156248286}
   maxWheelTurn: 40
+--- !u!114 &1291577258244145727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6832725082266742843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a28cb9371db3ba49a8ddd98db208060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 6999686756562764116}
+  forwardAcc: 5
+  maxSpeed: 50
+  turnStrength: 180
+  gravityForce: 10
+  dragOnGround: 3
+  speedInput: 3000
+  grounded: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  groundRayLength: 0.5
+  groundRayPoint: {fileID: 1324755088276642713}
+  leftFrontWheel: {fileID: 3069976858466403903}
+  rightFrontWheel: {fileID: 6632508646156248286}
+  maxWheelTurn: 25
+--- !u!114 &4628273029693409009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6832725082266742843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce31cf4169e8c0242a0e3d5028ef2301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carMovement: {fileID: 1291577258244145727}
 --- !u!1 &7098441948498785651
 GameObject:
   m_ObjectHideFlags: 0

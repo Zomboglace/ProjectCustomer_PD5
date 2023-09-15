@@ -4064,19 +4064,21 @@ PrefabInstance:
       value: road
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -8700617353114198275, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}
+    - {fileID: 65702495048144492, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}
-      insertIndex: 2
+      insertIndex: 1
       addedObject: {fileID: 2261034325267905167}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}
-      insertIndex: 3
+      insertIndex: 2
       addedObject: {fileID: 9051269080882045157}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}
-      insertIndex: 4
+      insertIndex: 3
       addedObject: {fileID: 6326063395772225295}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}
-      insertIndex: 5
+      insertIndex: 4
       addedObject: {fileID: 5722222443849363754}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f252dba8d2861c45b43328d45412d28, type: 3}

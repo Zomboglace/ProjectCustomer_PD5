@@ -21,10 +21,16 @@ public class AutoAccelerate : MonoBehaviour
     public Transform leftFrontWheel, rightFrontWheel;       //wheel turn behaviour variables
     public float maxWheelTurn = 25f;                        //
 
+    //---fuel variables---
+    public float carFuel = 110;
+    public float maxCarFuel = 110, fuelSubstractTime = 1.0f;
+    
+
     // Start is called before the first frame update
     void Start()
     {
         sphere.transform.parent = null;        //don't know what this does
+        InvokeRepeating("ReduceFuel", 3.0f, fuelSubstractTime);
     }
 
     // Update is called once per frame
@@ -66,5 +72,10 @@ public class AutoAccelerate : MonoBehaviour
         }
 
 
+    }
+
+    void ReduceFuel()
+    {
+        carFuel -= 1;
     }
 }

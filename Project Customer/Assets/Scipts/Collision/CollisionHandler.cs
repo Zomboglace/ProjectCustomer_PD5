@@ -9,7 +9,7 @@ public class CollisionHandler : MonoBehaviour
         if(collisionInfo.collider.tag == "Obstacle")
         {
             carMovement.enabled = false;
-            Debug.Log("GAMEOVER!!!");
+           // Debug.Log("GAMEOVER!!!");
         }
     }
 }

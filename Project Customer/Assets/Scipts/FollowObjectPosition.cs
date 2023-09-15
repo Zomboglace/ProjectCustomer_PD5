@@ -13,12 +13,17 @@ public class FollowObjectPosition : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         // Only follow the z position of the object
         Vector3 desiredPosition = new Vector3(transform.position.x, transform.position.y, objectToFollow.transform.position.z);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = smoothedPosition;
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+       
     }
 }

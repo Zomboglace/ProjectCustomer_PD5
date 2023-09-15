@@ -1506,36 +1506,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6832725082266742843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15a80ef5c2e80b548a0794fb7a27830d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spehere: {fileID: 6999686756562764116}
-  forwardAcc: 8
-  backAcc: 4
-  maxSpeed: 50
-  turnStrength: 180
-  gravityForce: 50
-  dragOnGround: 3
-  initialAcc: 2
-  maxRotation: 90
-  grounded: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  groundRayLength: 0.8
-  groundRayPoint: {fileID: 1324755088276642713}
-  leftFrontWheel: {fileID: 3069976858466403903}
-  rightFrontWheel: {fileID: 6632508646156248286}
-  maxWheelTurn: 40
---- !u!114 &1291577258244145727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6832725082266742843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a28cb9371db3ba49a8ddd98db208060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1545,7 +1515,8 @@ MonoBehaviour:
   turnStrength: 180
   gravityForce: 10
   dragOnGround: 3
-  speedInput: 3000
+  initialAcc: 2
+  maxRotation: 90
   grounded: 0
   whatIsGround:
     serializedVersion: 2

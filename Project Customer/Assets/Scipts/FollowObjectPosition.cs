@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowObjectPosition : MonoBehaviour
 {
     public GameObject objectToFollow;
-    public float smoothSpeed = 0.125f; // Smoothing factor for camera movement
+    public float smoothSpeed = 1f; // Smoothing factor for camera movement
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class FollowObjectPosition : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+  /* void FixedUpdate()
     {
        
-    }
+    }*/
 }

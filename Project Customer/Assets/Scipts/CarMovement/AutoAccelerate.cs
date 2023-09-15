@@ -21,6 +21,10 @@ public class AutoAccelerate : MonoBehaviour
     public Transform leftFrontWheel, rightFrontWheel;       //wheel turn behaviour variables
     public float maxWheelTurn = 25f;                        //
 
+    //---fuel variables---
+    public float carFuel = 110;
+    public float maxCarFuel = 110, fuelSubstractTime = 1.0f;
+    
     private Vector3 spherePos;
     public Vector3 sphereOffset;
 
@@ -28,6 +32,7 @@ public class AutoAccelerate : MonoBehaviour
     void Start()
     {
         sphere.transform.parent = null;        //don't know what this does
+        InvokeRepeating("ReduceFuel", 3.0f, fuelSubstractTime);
         sphereOffset = new Vector3(0f, 0f, 1.3f);
     }
 
@@ -75,5 +80,10 @@ public class AutoAccelerate : MonoBehaviour
         }
 
 
+    }
+
+    void ReduceFuel()
+    {
+        carFuel -= 1;
     }
 }

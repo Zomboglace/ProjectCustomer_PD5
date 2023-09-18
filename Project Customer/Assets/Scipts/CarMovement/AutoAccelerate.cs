@@ -33,7 +33,7 @@ public class AutoAccelerate : MonoBehaviour
     {
         sphere.transform.parent = null;        //don't know what this does
         InvokeRepeating("ReduceFuel", 3.0f, fuelSubstractTime);
-        sphereOffset = new Vector3(0f, 0f, 1.3f);
+        sphereOffset = new Vector3(0f, .45f, 1.1f);
     }
 
     // Update is called once per frame

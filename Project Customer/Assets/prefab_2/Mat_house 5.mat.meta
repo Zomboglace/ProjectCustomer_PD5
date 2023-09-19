@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< f3eef410b03eabeb904499f619bfd7cc658ba5f0
 guid: 2b327f28d6f8fcf46b9d3d14561142e2
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
+=======
+guid: c64b053dd805a2bc28b35c758c5eeafb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+>>>>>>> WIP
   userData: 
   assetBundleName: 
   assetBundleVariant: 

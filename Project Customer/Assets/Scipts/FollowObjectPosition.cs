@@ -13,7 +13,7 @@ public class FollowObjectPosition : MonoBehaviour
         
     }
 
-    void Update()
+    void LateUpdate()
     {
         // Only follow the z position of the object
         Vector3 desiredPosition = new Vector3(transform.position.x, transform.position.y, objectToFollow.transform.position.z);

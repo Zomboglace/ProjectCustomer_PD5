@@ -229,9 +229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7ab02628ef613478e3116377dc3fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTittle: {fileID: 803914375}
-  rules: {fileID: 1660745884}
-  options: {fileID: 1295636978}
+  gameTittle: {fileID: 0}
+  rules: {fileID: 0}
+  options: {fileID: 0}
 --- !u!114 &155301787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,8 +824,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: DRUNK RUN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a73fc329604dff748981ab123b782676, type: 2}
-  m_sharedMaterial: {fileID: 8941800578231663721, guid: a73fc329604dff748981ab123b782676, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

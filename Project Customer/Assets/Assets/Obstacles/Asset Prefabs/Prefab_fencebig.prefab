@@ -70,11 +70,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d0bec91a4a43f4241a819e9aa2a38872, type: 2}
     - target: {fileID: 919132149155446097, guid: 71a8aebf9a0947a45bcdc18579f11ffe, type: 3}
       propertyPath: m_Name
-      value: Fencebig (27)
+      value: Prefab_fencebig
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 71a8aebf9a0947a45bcdc18579f11ffe, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71a8aebf9a0947a45bcdc18579f11ffe, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -83,9 +87,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 71a8aebf9a0947a45bcdc18579f11ffe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2021592839195580407}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 71a8aebf9a0947a45bcdc18579f11ffe, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6170117656194587481}
   m_SourcePrefab: {fileID: 100100000, guid: 71a8aebf9a0947a45bcdc18579f11ffe, type: 3}
 --- !u!1 &8623153119734576459 stripped
 GameObject:
@@ -113,30 +114,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.19999999, y: 1.7233937, z: 0.5682941}
   m_Center: {x: 0.0000024400651, y: 0.7616968, z: 0.28414705}
---- !u!54 &6170117656194587481
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8623153119734576459}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0

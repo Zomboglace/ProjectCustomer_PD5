@@ -62,11 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4da5298986f865d428a62eeb2db4af3a, type: 3}
       propertyPath: m_Name
-      value: Prefab_rich_tree
+      value: Prefab_tree_rich
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4da5298986f865d428a62eeb2db4af3a, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4da5298986f865d428a62eeb2db4af3a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3881992704548618285, guid: 4da5298986f865d428a62eeb2db4af3a, type: 3}
       propertyPath: m_Layer

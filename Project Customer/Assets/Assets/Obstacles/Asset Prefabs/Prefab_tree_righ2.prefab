@@ -70,11 +70,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4249ad4c2ac5d54e85a4c869c065ea7, type: 3}
       propertyPath: m_Name
-      value: Prefab_rich2_tree
+      value: Prefab_tree_righ2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4249ad4c2ac5d54e85a4c869c065ea7, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4249ad4c2ac5d54e85a4c869c065ea7, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6443852219947562045, guid: f4249ad4c2ac5d54e85a4c869c065ea7, type: 3}
       propertyPath: m_Layer

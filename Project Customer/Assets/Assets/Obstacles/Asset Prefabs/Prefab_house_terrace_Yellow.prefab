@@ -178,11 +178,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 50cbadbddba8c6b4ea6fb2e4eed59cac, type: 3}
       propertyPath: m_Name
-      value: Prefab_Yellow_House
+      value: Prefab_house_terrace_Yellow
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 50cbadbddba8c6b4ea6fb2e4eed59cac, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 50cbadbddba8c6b4ea6fb2e4eed59cac, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 1858450591852411304, guid: 50cbadbddba8c6b4ea6fb2e4eed59cac, type: 3}
       propertyPath: m_Layer
@@ -269,4 +273,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 5.49, y: 8.37, z: 9.48}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.69, z: 0}

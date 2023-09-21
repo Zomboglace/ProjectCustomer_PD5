@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c02fefc36abc96b409c1017110c1fdd0, type: 3}
       propertyPath: m_Name
-      value: Prefab_STROPSIGN
+      value: Prefab_sign_stop
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c02fefc36abc96b409c1017110c1fdd0, type: 3}
       propertyPath: m_Layer
@@ -91,7 +91,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.4705443, y: 0.36835283, z: 0.23875761}
+  m_Size: {x: 0.56, y: 0.36835283, z: 0.23875761}
   m_Center: {x: -0.016406, y: 0.00082047126, z: 0.11937882}
 --- !u!54 &3199373024115353169
 Rigidbody:

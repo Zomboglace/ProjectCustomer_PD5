@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4777717311414696555
+--- !u!1001 &2978589066497960017
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,16 +13,20 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.02
+      value: 1.8766869
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: 0.585
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.159317
+      value: -19.351341
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -126,7 +130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_Name
-      value: Prefab_blue_car
+      value: Prefab_car_lime
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_Layer
@@ -152,10 +156,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 3690711861787103836, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a833572f671e38646a35397c553e056b, type: 2}
     - target: {fileID: 3880224624470076395, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -198,23 +198,23 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6821218904202914298}
+      addedObject: {fileID: 6310512213535677218}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4085170525759870413}
+      addedObject: {fileID: 6517516972768365355}
   m_SourcePrefab: {fileID: 100100000, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
---- !u!1 &5660098140529116986 stripped
+--- !u!1 &2708769114435097856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d8efc30fdd64ff4ba662d64636c1c8b, type: 3}
-  m_PrefabInstance: {fileID: 4777717311414696555}
+  m_PrefabInstance: {fileID: 2978589066497960017}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &6821218904202914298
+--- !u!65 &6310512213535677218
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5660098140529116986}
+  m_GameObject: {fileID: 2708769114435097856}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -229,13 +229,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.19, y: 0.89, z: 2.41}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4085170525759870413
+--- !u!54 &6517516972768365355
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5660098140529116986}
+  m_GameObject: {fileID: 2708769114435097856}
   serializedVersion: 4
   m_Mass: 100
   m_Drag: 5

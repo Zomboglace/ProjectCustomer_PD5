@@ -86,8 +86,8 @@ public class CameraDrunkness : MonoBehaviour
         lastLensDistortionChange = 0.0f;
 
         randomIntensity = UnityEngine.Random.Range(-drunkness, -drunkness / 2);
-        randomCenterX = UnityEngine.Random.Range(-drunkness, drunkness) / 2 + 0.5f;
-        randomCenterY = UnityEngine.Random.Range(-drunkness, drunkness) / 2 + 0.5f;
+        randomCenterX = UnityEngine.Random.Range(-drunkness * lensDistortionIntensity, drunkness * lensDistortionIntensity) / 2 + 0.5f;
+        randomCenterY = UnityEngine.Random.Range(-drunkness * lensDistortionIntensity, drunkness * lensDistortionIntensity) / 2 + 0.5f;
 
 
     }

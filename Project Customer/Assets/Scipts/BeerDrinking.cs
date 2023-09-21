@@ -8,6 +8,7 @@ public class BeerDrinking : MonoBehaviour
 
     private float drunkness = 0.0f;
     private int beerDrunk = 0;
+    private bool maxDrunkness = false;
     public float horizontalOffset = 0.0f;
     private float horizontalOffsetTarget = 0.0f;
     private float lastBeerDrunk = 0.0f;
@@ -25,12 +26,15 @@ public class BeerDrinking : MonoBehaviour
         horizontalOffsetTarget = 0.0f;
         lastBeerDrunk = 0.0f;
         lastDirectionChange = 0.0f;
+        maxDrunkness = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Drink();
+        if (!maxDrunkness) {
+            Drink();
+        }
         changeDirection();
         changeCurrentHorizontalOffset();
     }
@@ -62,7 +66,10 @@ public class BeerDrinking : MonoBehaviour
         horizontalOffset = Mathf.Lerp(horizontalOffset, horizontalOffsetTarget, lerpTimeValue);
     }
 
-
+    public float getBeerDrunk() {
+        return beerDrunk;
+    }
+    
     public float getHorizontalOffset() {
         return horizontalOffset;
     }

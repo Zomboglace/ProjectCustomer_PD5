@@ -585,7 +585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709057395}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13010351, y: 0.017121358, z: -0.0022469852, w: 0.99135005}
+  m_LocalRotation: {x: 0.13010353, y: 0.017121343, z: -0.0022469836, w: 0.99135005}
   m_LocalPosition: {x: 1.3362689, y: 7.3597975, z: -2.6029186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -695,8 +695,8 @@ Transform:
 --- !u!1 &848763273
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1119852309909014291, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+  m_PrefabInstance: {fileID: 3805573192287078571}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -713,8 +713,8 @@ GameObject:
 --- !u!114 &848763274
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3592078355987010099, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+  m_PrefabInstance: {fileID: 3805573192287078571}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848763273}
   m_Enabled: 1
@@ -725,12 +725,18 @@ MonoBehaviour:
   beerDrinking: {fileID: 1753697265}
   globalIntensity: 1
   globalChangeSpeed: 1
+  bloomIntensity: 1
+  bloomChangeSpeed: 1
+  lensDistortionIntensity: 1
+  lensDistortionChangeSpeed: 1
   lensDistortionChangeInterval: 1
+  depthOfFieldIntensity: 1
+  depthOfFieldChangeSpeed: 1
 --- !u!114 &848763275
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 969890965012549523, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+  m_PrefabInstance: {fileID: 3805573192287078571}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848763273}
   m_Enabled: 1
@@ -746,8 +752,8 @@ MonoBehaviour:
 --- !u!4 &848763276
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+  m_PrefabInstance: {fileID: 3805573192287078571}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848763273}
   serializedVersion: 2
@@ -863,7 +869,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310272885}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000014901159, y: 0.000000014901159, z: -0.0000000037252899, w: 1}
+  m_LocalRotation: {x: 0.000000014901159, y: -0.000000014901159, z: 0.0000000037252899, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1466,12 +1472,73 @@ CapsuleCollider:
   m_Height: 0.08
   m_Direction: 2
   m_Center: {x: 7.243326e-14, y: 0.000000029336702, z: 0.022070322}
+--- !u!1001 &3805573192287078571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1119852309909014291, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_Name
+      value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9717588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.646805
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8723917
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -2.3283062e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592078355987010099, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
+      propertyPath: beerDrinking
+      value: 
+      objectReference: {fileID: 1753697265}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32229154b747ae612b2e1eecce2dfdc5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1753697266}
-  - {fileID: 848763276}
+  - {fileID: 3805573192287078571}
   - {fileID: 709057400}
   - {fileID: 1997440957}
   - {fileID: 815374067}

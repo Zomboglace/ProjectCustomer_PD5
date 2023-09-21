@@ -52,14 +52,19 @@ public class CameraDrunkness : MonoBehaviour
         DepthOfFieldUpdate(drunkness);
     }
 
+    public float bloomIntensity = 1.0f;
+    public float bloomChangeSpeed = 1.0f;
+
     void BloomUpdate(float drunkness) 
     {
-        float finalIntensity = drunkness * 10.0f * globalIntensity;
-        float finalChangeSpeed = Time.deltaTime * 0.05f * globalChangeSpeed;
+        float finalIntensity = drunkness * 10.0f * globalIntensity * bloomIntensity;
+        float finalChangeSpeed = Time.deltaTime * 0.05f * globalChangeSpeed * bloomChangeSpeed;
         bloom.intensity.value = Mathf.Lerp(bloom.intensity.value, finalIntensity, finalChangeSpeed);
     }
 
 
+    public float lensDistortionIntensity = 1.0f;
+    public float lensDistortionChangeSpeed = 1.0f;
     private float lastLensDistortionChange = 0.0f;
     public float lensDistortionChangeInterval = 1.0f;
 
@@ -69,8 +74,8 @@ public class CameraDrunkness : MonoBehaviour
 
     void LensDistortionUpdate(float drunkness)
     {
-        float finalIntensity = drunkness * globalIntensity;
-        float finalChangeSpeed = Time.deltaTime * 0.5f * globalChangeSpeed;
+        float finalIntensity = drunkness * globalIntensity * lensDistortionIntensity;
+        float finalChangeSpeed = Time.deltaTime * 0.5f * globalChangeSpeed * lensDistortionChangeSpeed;
         lensDistortion.intensity.value = Mathf.Lerp(lensDistortion.intensity.value, randomIntensity, finalChangeSpeed);
         lensDistortion.center.value = Vector2.Lerp(lensDistortion.center.value, new Vector2(randomCenterX, randomCenterY), finalChangeSpeed);
 
@@ -87,10 +92,12 @@ public class CameraDrunkness : MonoBehaviour
 
     }
 
+    public float depthOfFieldIntensity = 1.0f;
+    public float depthOfFieldChangeSpeed = 1.0f;
     void DepthOfFieldUpdate(float drunkness)
     {
-        float finalIntensity = 1 - (drunkness);
-        float finalChangeSpeed = Time.deltaTime * 0.5f * globalChangeSpeed;
+        float finalIntensity = 1 - drunkness * globalIntensity * depthOfFieldIntensity;
+        float finalChangeSpeed = Time.deltaTime * 0.5f * globalChangeSpeed * depthOfFieldChangeSpeed;
         depthOfField.focusDistance.value = Mathf.Lerp(depthOfField.focusDistance.value, finalIntensity, finalChangeSpeed);
     }
 }

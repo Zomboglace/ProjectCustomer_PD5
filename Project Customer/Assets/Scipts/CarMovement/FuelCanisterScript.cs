@@ -19,7 +19,7 @@ public class FuelCanisterScript : MonoBehaviour
 
     void Update()
     {
-        pointerAngle = (myCar.carFuel * (minFuelAngle - maxFuelAngle)) / 100;
+       // pointerAngle = (myCar.carFuel * (minFuelAngle - maxFuelAngle)) / 100;
         //pointer.rotate.z = 65 + pointerAngle;
         pointer.transform.rotation = Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, 65 - pointerAngle);
         //pointer.transform.Rotate(

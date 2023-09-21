@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &99286583
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1119852309909014291, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_Name
+      value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9717588
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.646805
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.8723917
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -2.3283062e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2992102299783483579, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 231e4a3cc2710c4878bad4e2b799ff15, type: 3}
 --- !u!1 &342798442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8983122185277928589, guid: c30b60a028ae30b46b62273d3f5b3d27, type: 3}
@@ -514,14 +571,14 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -869,6 +926,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1572721294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572721296}
+  - component: {fileID: 1572721295}
+  m_Layer: 0
+  m_Name: GameDrunknessLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1572721295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572721294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66df7ade1068ba39588d85189d12691d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenEachBeerInSeconds: 5
+  timeBetweenNewDirectionInSeconds: 3
+--- !u!4 &1572721296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572721294}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.001126051, y: 7.637038, z: 5.849221}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6477,9 +6580,11 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 99286583}
+  - {fileID: 1572721296}
+  - {fileID: 709057400}
   - {fileID: 1997440957}
   - {fileID: 815374067}
-  - {fileID: 709057400}
   - {fileID: 551894935}
   - {fileID: 1463805285}
   - {fileID: 1599143699}

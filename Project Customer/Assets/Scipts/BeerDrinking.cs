@@ -9,7 +9,7 @@ public class BeerDrinking : MonoBehaviour
     private float drunkness = 0.0f;
     private int beerDrunk = 0;
     private bool maxDrunkness = false;
-    public float horizontalOffset = 0.0f;
+    private float horizontalOffset = 0.0f;
     private float horizontalOffsetTarget = 0.0f;
     private float lastBeerDrunk = 0.0f;
     private float lastDirectionChange = 0.0f;

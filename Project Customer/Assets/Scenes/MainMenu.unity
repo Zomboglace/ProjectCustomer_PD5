@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7ab02628ef613478e3116377dc3fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTittle: {fileID: 803914375}
   rules: {fileID: 1660745884}
   options: {fileID: 1295636978}
 --- !u!114 &155301787
@@ -823,8 +824,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: DRUNK RUN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 47a87fdbe30a9b347b345937839fb592, type: 2}
-  m_sharedMaterial: {fileID: 382843426555601771, guid: 47a87fdbe30a9b347b345937839fb592, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a73fc329604dff748981ab123b782676, type: 2}
+  m_sharedMaterial: {fileID: 8941800578231663721, guid: a73fc329604dff748981ab123b782676, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -848,8 +849,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -982,7 +983,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 155301786}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ShowRules
+        m_MethodName: ShowSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

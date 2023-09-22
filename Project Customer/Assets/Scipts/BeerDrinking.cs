@@ -6,6 +6,9 @@ using System;
 public class BeerDrinking : MonoBehaviour
 {
 
+    public AudioSource src;
+    public AudioClip beerdrinking;
+
     private float drunkness = 0.0f;
     private int beerDrunk = 0;
     private bool maxDrunkness = false;
@@ -20,6 +23,8 @@ public class BeerDrinking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        src.clip = BeerDrinking;
+
         drunkness = 0.0f;
         beerDrunk = 0;
         horizontalOffset = 0.0f;
@@ -44,6 +49,10 @@ public class BeerDrinking : MonoBehaviour
         if (lastBeerDrunk < timeBetweenEachBeerInSeconds) {
             return;
         }
+
+        //sound effetc
+        src.Play();
+
         lastBeerDrunk = 0.0f;
         beerDrunk += 1;
         drunkness = 1 - (float)Math.Pow(0.95, beerDrunk);

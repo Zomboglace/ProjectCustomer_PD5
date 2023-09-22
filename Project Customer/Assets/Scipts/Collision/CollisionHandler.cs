@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -32,5 +33,10 @@ public class CollisionHandler : MonoBehaviour
             src.clip = crashsound;
             src.Play();
         }
+    }
+
+    public void endSceneButton()
+    {
+        SceneManager.LoadSceneAsync(1);
     }
 }

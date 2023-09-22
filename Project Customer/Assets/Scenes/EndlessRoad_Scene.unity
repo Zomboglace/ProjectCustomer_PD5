@@ -1205,8 +1205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66df7ade1068ba39588d85189d12691d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  src: {fileID: 0}
-  beerdrinking: {fileID: 0}
+  src: {fileID: 731678665}
+  beerdrinking: {fileID: 8300000, guid: c623d645c69112649b935bd7b675fca4, type: 3}
   timeBetweenEachBeerInSeconds: 5
   timeBetweenNewDirectionInSeconds: 3
 --- !u!4 &1572721296

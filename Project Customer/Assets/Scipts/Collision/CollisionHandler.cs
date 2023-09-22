@@ -16,17 +16,19 @@ public class CollisionHandler : MonoBehaviour
         endScene.SetActive(false);
         src.clip = backgroundmusik;
         src.Play();
+        
     }
     void OnCollisionEnter(Collision collisionInfo)
     {
         if(collisionInfo.collider.tag == "Obstacle" && !gameOver)
         {
-            gameOver == true;
+            gameOver = true;
             carMovement.enabled = false;
             endScene.SetActive(true);
             Debug.Log("GAMEOVER!!!");
 
             //play sound after crash
+
             src.clip = crashsound;
             src.Play();
         }

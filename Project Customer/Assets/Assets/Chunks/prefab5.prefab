@@ -1163,6 +1163,10 @@ PrefabInstance:
       value: car_3
       objectReference: {fileID: 0}
     - target: {fileID: 616040160714298940, guid: 7da919549a44c274995df30c5e367013, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 616040160714298940, guid: 7da919549a44c274995df30c5e367013, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.91
       objectReference: {fileID: 0}
@@ -1200,6 +1204,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 616040160714298940, guid: 7da919549a44c274995df30c5e367013, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 616040160714298940, guid: 7da919549a44c274995df30c5e367013, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

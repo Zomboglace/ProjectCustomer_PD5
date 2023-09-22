@@ -607,12 +607,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 293149383451830649}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: CollisionHandler, Assembly-CSharp
+        m_MethodName: endSceneButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -777,7 +777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709057395}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11540853, y: 0.7316406, z: -0.6595397, w: 0.128025}
+  m_LocalRotation: {x: 0.11540861, y: 0.7316406, z: -0.6595397, w: 0.12802508}
   m_LocalPosition: {x: 0, y: 6.9997973, z: 0.117081165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1202,7 +1202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310272885}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.000000029802319, y: 0.00000002235174, z: -0.00000030547378, w: 1}
+  m_LocalRotation: {x: 0.00000003073364, y: 0.000000014901159, z: -0.00000008940696, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1920,11 +1920,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9003c5f617d0a614ba6cf954df8a8fd3, type: 3}
---- !u!1 &293149383451830649 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5233777472736821833, guid: 9003c5f617d0a614ba6cf954df8a8fd3, type: 3}
+--- !u!114 &293149383451830649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4314674437479559799, guid: 9003c5f617d0a614ba6cf954df8a8fd3, type: 3}
   m_PrefabInstance: {fileID: 293149383451830648}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce31cf4169e8c0242a0e3d5028ef2301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

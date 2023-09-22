@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 731678665}
-  beerdrinking: {fileID: 8300000, guid: c623d645c69112649b935bd7b675fca4, type: 3}
+  beerdrinking: {fileID: 8300000, guid: 5dcb2bc3285d82941a6134e7ec21d482, type: 3}
   timeBetweenEachBeerInSeconds: 5
   timeBetweenNewDirectionInSeconds: 3
 --- !u!4 &1572721296

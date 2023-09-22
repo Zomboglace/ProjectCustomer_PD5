@@ -23,7 +23,7 @@ public class BeerDrinking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        src.clip = BeerDrinking;
+        src.clip = beerdrinking;
 
         drunkness = 0.0f;
         beerDrunk = 0;
@@ -51,7 +51,7 @@ public class BeerDrinking : MonoBehaviour
         }
 
         //sound effetc
-        src.Play();
+        //src.Play();
 
         lastBeerDrunk = 0.0f;
         beerDrunk += 1;

@@ -31,6 +31,10 @@ public class AutoAccelerate : MonoBehaviour
     //death scene
     public GameObject endScene;
 
+    //drunk system
+
+    public BeerDrinking drinking;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +56,8 @@ public class AutoAccelerate : MonoBehaviour
 
 
         turnInput = Input.GetAxis("Horizontal");      //read steering input
+
+        turnInput = turnInput + drinking.getHorizontalOffset();
 
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime, 0f)); //rotate car, sphere will automatically follow car's new forward direction
 

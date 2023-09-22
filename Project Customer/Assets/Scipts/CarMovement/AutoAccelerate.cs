@@ -28,6 +28,9 @@ public class AutoAccelerate : MonoBehaviour
     private Vector3 spherePos;
     public Vector3 sphereOffset;
 
+    //death scene
+    public GameObject endScene;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -6,6 +6,7 @@ public class CollisionHandler : MonoBehaviour
     public AudioSource src;
     public AudioClip crashsound, backgroundmusik;
 
+    private bool gameOver = false;
 
     //death scene
     public GameObject endScene;
@@ -18,8 +19,9 @@ public class CollisionHandler : MonoBehaviour
     }
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if(collisionInfo.collider.tag == "Obstacle")
+        if(collisionInfo.collider.tag == "Obstacle" && !gameOver)
         {
+            gameOver == true;
             carMovement.enabled = false;
             endScene.SetActive(true);
             Debug.Log("GAMEOVER!!!");

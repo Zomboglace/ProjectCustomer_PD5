@@ -51,7 +51,7 @@ public class BeerDrinking : MonoBehaviour
         }
 
         //sound effetc
-        //src.Play();
+        src.Play();
 
         lastBeerDrunk = 0.0f;
         beerDrunk += 1;
